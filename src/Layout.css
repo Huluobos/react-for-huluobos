@@ -1,0 +1,9 @@
+.Layout {
+  text-align: center;
+}
+
+.Layout-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
