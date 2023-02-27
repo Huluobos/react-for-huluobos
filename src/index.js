@@ -12,7 +12,6 @@ import Layout from './Layout';
 const container = document.getElementById('root');
 
 const App = () => {
-
   return (
     <HashRouter>
       <ConfigProvider locale={zhCN}>
