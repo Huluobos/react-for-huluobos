@@ -6,13 +6,13 @@ const FancyButton = React.forwardRef((props, ref) => (
   ));
 
   function clickFun(e,ref){
-    console.log(e);
-    console.log(ref);
+    // console.log(e);
+    // console.log(ref);
   }
   
 function DomD(props){
     const ref = React.createRef();
-    console.log('ref: ', ref);
+    // console.log('ref: ', ref);
     return (<FancyButton ref={ref} onClick={(e)=>clickFun(e,ref)} {...props.props}>Click me!</FancyButton>)
 }
 
@@ -31,7 +31,7 @@ class DomW extends React.Component{
         this.state={}
     }
     clickFun(){
-        console.log("DomW.click");
+        // console.log("DomW.click");
     }
     render(){
         return (<DomWChild className={'DomW'} onClick={this.clickFun} ref={ref}>父级向下透传</DomWChild>)

@@ -9,6 +9,10 @@ import Home from './components/day1/Home'
 import Text from './components/day1/Text'
 import Text2 from './components/day1/Text2'
 import Text3 from './components/day1/Text3'
+
+
+
+
 // import Text4 from './components/Text4'
 // import Text5 from './components/Text5'
 // import Text6 from './components/Text6'
@@ -17,11 +21,13 @@ const Text4 = React.lazy(()=>import('./components/day1/Text4'))
 const Text5 = lazy(()=>import('./components/day1/Text5'))
 const Text6 = lazy(()=>import('./components/day1/Text6'))
 const IndexDay2 = lazy(()=>import('./components/day2/index'))
+const Page1 = lazy(()=>import('./components/day4/1'))
 
 
 const Layout = () => (
   <div className="Layout">
-
+    <Page1 num={0}/>
+    <hr/>
     <Suspense fallback={<div>Loading...</div>}>
       <IndexDay2/>
     </Suspense>
@@ -37,6 +43,9 @@ const Layout = () => (
     <Suspense fallback={<div>Loading...</div>}>
       <Text6/>
     </Suspense>
+
+
+    
  
   </div>
 );

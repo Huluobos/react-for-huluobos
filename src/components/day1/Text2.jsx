@@ -18,7 +18,7 @@ function LogoutButton(props) {
   );
 }
 function clickFun(e){
-  console.log(e);
+  // console.log(e);
 }
 
 function Greeting(props) {

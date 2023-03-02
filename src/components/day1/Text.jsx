@@ -24,10 +24,10 @@ class Text extends React.Component {
     }
     handleClick = (e,str)=>{
         // console.log(str);
-        console.log(e);
+        // console.log(e);
         // e.preventDefault();
-        console.log(this);
-        console.log('11111111111');
+        // console.log(this);
+        // console.log('11111111111');
     }
     render() {
       return (
